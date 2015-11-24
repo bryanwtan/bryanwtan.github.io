@@ -4,91 +4,91 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
 
 	<link rel='shortcut icon' href='favicon.ico' />
-	<link href='css/style.css' rel='stylesheet'>
 
 	<title>Bryan Tan, Software Engineer</title>
 </head>
 
 <body>
-	<div id='custom_nav' class='fixed nav_purple'>
-		<h1>BT</h1>
+	<style>
+		#custom_nav {
+		    padding: 1em;
+		    background-color: #54366d;
+		}
+
+		html, body {
+		    height: 100%;
+		}
+
+		/*large screens*/
+		@media (min-width: 64.063em){
+		    p {
+		        font-size: 3.5em;
+		    }
+		    body {
+		        background: url('pics/bry_lion.jpg') bottom right no-repeat;
+		    }
+		    #cover {
+		        padding: 6em;
+		    }
+		}
+		/*medium screens*/
+		@media (min-width: 40.063em) and (max-width: 64em) {
+		    p {
+		        font-size: 3em;
+		    }
+		    body {
+		        background: url('pics/bry_lion_m.jpg') bottom right no-repeat;
+		    }
+		    #cover {
+		        padding: 5em;
+		    }
+		}
+		/*small screens*/
+		@media (max-width: 40em){
+		    p {
+		        font-size: 2.5em;
+		    }
+		    body {
+		        background: url('pics/bry_lion_s.jpg') bottom right no-repeat;
+		    }
+		    #cover {
+		        padding: 4em;
+		    }
+		}
+
+		body {
+		    color: #ffffff;
+		    background-color: #492f5f;
+		    font-family: 'Source Sans Pro', sans-serif;
+		    margin: 0;
+
+		    cursor: default;
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -o-user-select: none;
+		    user-select: none;
+		}
+
+		p {
+		    font-family: 'Roboto Slab', serif;
+		    margin: 0;
+		}
+
+		.yellow-text {
+		    color: #fff67a;
+		}
+	</style>
+
+	<div id='custom_nav'>
+		<p>BT</p>
 	</div>
 
-	<div id='cover' class='purple-background'>
-		<h1>Hi, I'm <span class='yellow-text'>Bryan</span></h1>
-		<h3>Photographer and Software Engineer</h3>
-
-		<ul id='photo-grid'></ul>
+	<div id='cover'>
+		<p>Hi, I'm <span class='yellow-text'>Bryan</span></p>
 	</div>
-
-	<div id='footer'><p>Made with ♥ in State College</p></div>
-
-	<!-- custom -->
-	<script>
-		(() => {
-			'use strict';
-
-			// horizontal set
-			let gridPicNames = generatePictureList(12);
-			shuffleArray(gridPicNames);
-			let randomPics = selectRandomFromNames(gridPicNames);
-			buildGridTags('#photo-grid', 'horiz', randomPics);
-
-			// vertical set
-			gridPicNames = generatePictureList(8);
-			shuffleArray(gridPicNames);
-			randomPics = selectRandomFromNames(gridPicNames);
-			buildGridTags('#photo-grid', 'vert', randomPics);
-
-			function generatePictureList(max) {
-				let names = [];
-				for(let i = 0; i <= max; i++) {
-					i = i + "";
-					while(i.length < 4)	i = '0' + i;
-					names.push(i);
-				}
-				return names;
-			};
-
-			function shuffleArray(array) {
-				let i = 0;
-				let j = 0;
-				let temp = null;
-
-				for (i = array.length - 1; i > 0; i -= 1) {
-					j = Math.floor(Math.random() * (i + 1));
-					temp = array[i];
-					array[i] = array[j];
-					array[j] = temp;
-				}
-			};
-
-			function selectRandomFromNames(array) {
-				return array.splice(0,4);
-			};
-
-		    function buildGridTags(target, folder, fileNames) {
-		        var gridArr = [];
-
-		        fileNames.forEach((fileName) => {
-		            gridArr.push('<li><a href="/pics/');
-					gridArr.push(folder);
-					gridArr.push('/m/');
-		            gridArr.push(fileName);
-		            gridArr.push('.jpg"><img src="/pics/');
-					gridArr.push(folder);
-					gridArr.push('/s/');
-		            gridArr.push(fileName);
-		            gridArr.push('.jpg"></a></li>');
-		        });
-
-				console.log(gridArr.join(''));
-		    };
-		})();
-	</script>
 </body>
 </html>
