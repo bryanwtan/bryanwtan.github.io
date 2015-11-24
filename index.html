@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bryan Tan</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+
+	<link rel='shortcut icon' href='favicon.ico' />
+	<link href='css/style.css' rel='stylesheet'>
+
+	<title>Bryan Tan, Software Engineer</title>
 </head>
 
 <body>
-    Hi
+	<div id='custom_nav' class='fixed nav_purple'>
+		<h1>BT</h1>
+	</div>
+
+	<div id='cover' class='purple-background'>
+		<h1>Hi, I'm <span class='yellow-text'>Bryan</span></h1>
+		<h3>Photographer and Software Engineer</h3>
+
+		<ul id='photo-grid'></ul>
+	</div>
+
+	<div id='footer'><p>Made with ♥ in State College</p></div>
+
+	<!-- custom -->
+	<script>
+		(() => {
+			'use strict';
+
+			// horizontal set
+			let gridPicNames = generatePictureList(12);
+			shuffleArray(gridPicNames);
+			let randomPics = selectRandomFromNames(gridPicNames);
+			buildGridTags('#photo-grid', 'horiz', randomPics);
+
+			// vertical set
+			gridPicNames = generatePictureList(8);
+			shuffleArray(gridPicNames);
+			randomPics = selectRandomFromNames(gridPicNames);
+			buildGridTags('#photo-grid', 'vert', randomPics);
+
+			function generatePictureList(max) {
+				let names = [];
+				for(let i = 0; i <= max; i++) {
+					i = i + "";
+					while(i.length < 4)	i = '0' + i;
+					names.push(i);
+				}
+				return names;
+			};
+
+			function shuffleArray(array) {
+				let i = 0;
+				let j = 0;
+				let temp = null;
+
+				for (i = array.length - 1; i > 0; i -= 1) {
+					j = Math.floor(Math.random() * (i + 1));
+					temp = array[i];
+					array[i] = array[j];
+					array[j] = temp;
+				}
+			};
+
+			function selectRandomFromNames(array) {
+				return array.splice(0,4);
+			};
+
+		    function buildGridTags(target, folder, fileNames) {
+		        var gridArr = [];
+
+		        fileNames.forEach((fileName) => {
+		            gridArr.push('<li><a href="/pics/');
+					gridArr.push(folder);
+					gridArr.push('/m/');
+		            gridArr.push(fileName);
+		            gridArr.push('.jpg"><img src="/pics/');
+					gridArr.push(folder);
+					gridArr.push('/s/');
+		            gridArr.push(fileName);
+		            gridArr.push('.jpg"></a></li>');
+		        });
+
+				console.log(gridArr.join(''));
+		    };
+		})();
+	</script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+body {
+    color: #ffffff;
+    background-color: #252525;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 64.063em) { /*large screens*/
+    h1{ font-size: 3.8em; }
+    h3{ font-size: 2.8em; }
+} @media (min-width: 40.063em) and (max-width: 64em) { /*medium screens*/
+    h1{ font-size: 2.9em; }
+    h3{ font-size: 2em; }
+} @media (max-width: 40em) { /*small screens*/
+    h1{ font-size: 2.5em; }
+    h3{ font-size: 1.7em; }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*all screens*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+p {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.yellow-text {
+    color: #fff67a;
+}
+
+#footer {
+    background-color: #232e39;
+}
