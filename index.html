@@ -4,91 +4,37 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
+	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
 
-	<link rel='shortcut icon' href='favicon.ico' />
+	<!-- github fonticon -->
+	<link rel='stylesheet' href='octicons/octicons.css'>
+
+	<!-- custom styles -->
+	<link rel='stylesheet' href='styles/general-page.css'>
+	<link rel='stylesheet' href='styles/content-styles.css'>
+
+	<link rel='shortcut icon' href='favicon.ico'>
 
 	<title>Bryan Tan, Software Engineer</title>
 </head>
 
 <body>
-	<style>
-		#custom_nav {
-		    padding: 1em;
-		    background-color: #54366d;
-		}
-
-		html, body {
-		    height: 100%;
-		}
-
-		/*large screens*/
-		@media (min-width: 64.063em){
-		    p {
-		        font-size: 3.5em;
-		    }
-		    body {
-		        background: url('pics/bry_lion_l.jpg') bottom right no-repeat;
-		    }
-		    #cover {
-		        padding: 6em;
-		    }
-		}
-		/*medium screens*/
-		@media (min-width: 40.063em) and (max-width: 64em) {
-		    p {
-		        font-size: 3em;
-		    }
-		    body {
-		        background: url('pics/bry_lion_m.jpg') bottom right no-repeat;
-		    }
-		    #cover {
-		        padding: 5em;
-		    }
-		}
-		/*small screens*/
-		@media (max-width: 40em){
-		    p {
-		        font-size: 2.5em;
-		    }
-		    body {
-		        background: url('pics/bry_lion_s.jpg') bottom right no-repeat;
-		    }
-		    #cover {
-		        padding: 4em;
-		    }
-		}
-
-		body {
-		    color: #ffffff;
-		    background-color: #492f5f;
-		    font-family: 'Source Sans Pro', sans-serif;
-		    margin: 0;
-
-		    cursor: default;
-		    -webkit-user-select: none;
-		    -khtml-user-select: none;
-		    -moz-user-select: none;
-		    -o-user-select: none;
-		    user-select: none;
-		}
-
-		p {
-		    font-family: 'Roboto Slab', serif;
-		    margin: 0;
-		}
-
-		.yellow-text {
-		    color: #fff67a;
-		}
-	</style>
-
+	<!-- navbar -->
 	<div id='custom_nav'>
-		<p>BT</p>
+		<div id='nav-logo'>BT</div>
+		<div>
+			<a href='https://github.com/bryanwtan'>
+				<span class='mega-octicon octicon-mark-github'></span>
+			</a>
+		</div>
 	</div>
 
+	<!-- landing page -->
 	<div id='cover'>
-		<p>Hi, I'm <span class='yellow-text'>Bryan</span></p>
+		<div id='hello-text'>
+			Hi, I'm <span class='yellow-text'>Bryan</span>
+		</div>
 	</div>
 </body>
 </html>
