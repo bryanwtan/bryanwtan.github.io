@@ -11,8 +11,8 @@
 	<link rel='stylesheet' href='octicons/octicons.css'>
 
 	<!-- custom styles -->
-	<link rel='stylesheet' href='styles/general-page.css'>
-	<link rel='stylesheet' href='styles/content-styles.css'>
+	<link rel='stylesheet' href='general.css'>
+	<link rel='stylesheet' href='splash.css'>
 
 	<link rel='shortcut icon' href='favicon.ico'>
 
@@ -20,55 +20,6 @@
 </head>
 
 <body>
-	<style>
-		/*large screens*/
-		@media (min-width: 64.063em){
-		    #cover {
-		        background: url('pics/prof_l.jpg') bottom center no-repeat;
-		    }
-
-		    #hello-text {
-		        font-size: 3.5em;
-		        padding: 2em;
-		    }
-		}
-		/*medium screens*/
-		@media (min-width: 40.063em) and (max-width: 64em) {
-		    #cover {
-		        background: url('pics/prof_m.jpg') bottom center no-repeat;
-		    }
-
-		    #hello-text {
-		        font-size: 3em;
-		        padding: 2em;
-		    }
-		}
-		/*small screens*/
-		@media (max-width: 40em){
-		    #cover {
-		        background: url('pics/prof_s.jpg') bottom center no-repeat;
-		    }
-
-		    #hello-text {
-		        font-size: 2em;
-		        padding: 2em;
-		    }
-		}
-
-		#cover {
-		    height: calc(100vh - 53px);
-		    background-color: #492f5f;
-		    margin: 0;
-
-		    cursor: default;
-		    -webkit-user-select: none;
-		    -khtml-user-select: none;
-		    -moz-user-select: none;
-		    -o-user-select: none;
-		    user-select: none;
-		}
-	</style>
-
 	<!-- navbar -->
 	<div id='custom_nav'>
 		<div id='nav-logo'>BT</div>
@@ -81,8 +32,10 @@
 
 	<!-- landing page -->
 	<div id='cover'>
-		<div id='hello-text'>
-			Hi, I'm <span class='yellow-text'>Bryan</span>
+		<div class='content-wrap'>
+			<div id='hello-text'>
+				Hi, I'm <span class='yellow-text'>Bryan</span>
+			</div>
 		</div>
 	</div>
 </body>
