@@ -1,6 +1,6 @@
 /*large screens*/
 @media (min-width: 64.063em){
-    #cover {
+    #splash {
         background: url('pics/prof_l.jpg') bottom center no-repeat;
     }
 
@@ -11,7 +11,7 @@
 }
 /*medium screens*/
 @media (min-width: 40.063em) and (max-width: 64em) {
-    #cover {
+    #splash {
         background: url('pics/prof_m.jpg') bottom center no-repeat;
     }
 
@@ -22,7 +22,7 @@
 }
 /*small screens*/
 @media (max-width: 40em){
-    #cover {
+    #splash {
         background: url('pics/prof_s.jpg') bottom center no-repeat;
     }
 
@@ -33,32 +33,22 @@
 }
 
 #cover {
+    width: 100vw;
     height: calc(100vh - 53px);
     background-color: #492f5f;
     margin: 0;
-    overflow: hidden;
-    transition: background-position 1s ease-in-out;
 }
 
-#cover:active {
-    background-position: 100vw bottom;
-}
-
-#cover:active #hello-text {
-    left: -100vw;
+#splash {
+    height: 100%;
+    transition: 1s ease-in-out;
 }
 
 #hello-text {
-    position: absolute;
     left: 0;
     transition: 1s ease-in-out;
 }
 
 .yellow-text {
     color: #fff67a;
-}
-
-.content-wrap {
-    height: 100%;
-    padding: 10px;
 }
