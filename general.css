@@ -8,7 +8,7 @@ html, body {
     -o-user-select: none;
     user-select: none;
 
-    background-color: #252525;
+    background-color: #492f5f;
     color: #ffffff;
     font-family: 'Roboto Slab', serif;
 }
@@ -18,7 +18,10 @@ a {
     text-decoration: none;
 }
 
-#custom_nav {
+#custom-nav {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+
     height: 53px;
     background-color: #54366d;
     padding-left: 8px;
