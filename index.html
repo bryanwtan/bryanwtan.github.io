@@ -6,32 +6,28 @@
 
 	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300italic' rel='stylesheet' type='text/css'>
 
-	<!-- github fonticon -->
-	<link rel='stylesheet' href='octicons/octicons.css'>
+	<!-- normalize -->
+	<link rel='stylesheet' href='css/normalize.css'>
 
 	<!-- custom styles -->
-	<link rel='stylesheet' href='general.css'>
-	<link rel='stylesheet' href='splash.css'>
+	<link rel='stylesheet' href='css/general.css'>
+	<link rel='stylesheet' href='css/splash.css'>
+	<link rel='stylesheet' href='css/cards.css'>
+	<link rel='stylesheet' href='css/photography.css'>
+	<link rel='stylesheet' href='css/reading.css'>
+	<link rel='stylesheet' href='css/listening.css'>
 
 	<link rel='shortcut icon' href='favicon.ico'>
 
-	<script async src='splash.js'></script>
+	<script async src='js/splash.js'></script>
+	<script async src='js/photography.js'></script>
 
 	<title>Bryan Tan, Software Engineer</title>
 </head>
 
 <body>
-	<!-- navbar -->
-	<div id='custom-nav'>
-		<div id='nav-logo'>BT</div>
-		<div>
-			<a href='https://github.com/bryanwtan'>
-				<span class='mega-octicon octicon-mark-github'></span>
-			</a>
-		</div>
-	</div>
-
 	<!-- landing page -->
 	<div id='cover'>
 		<div id='splash'></div>
@@ -42,6 +38,136 @@
 			</a>
 			<div class='position-text'>Software Engineer</div>
 		</div>
+
+		<div id='hidden-ellipse' class='gray-bottom-ellipse ellipse'></div>
+		<div class='purple-top-ellipse ellipse'></div>
 	</div>
+
+	<div class='cards'>
+		<div id='experience-container'>
+			<div class='card-column flex1'>
+				<div class='card card-row'>
+					<div class='card-content flex1'>
+						experience
+					</div>
+				</div>
+			</div>
+
+			<div class='card-column flex4'>
+				<div class='card card-row'>
+					<div class='card-title yellow'>
+						now
+					</div>
+					<div class='card-content card-column flex1'>
+						<div>Capital One</div>
+						<div class='alegreya-sans-italic'>
+							Software Engineer
+						</div>
+					</div>
+				</div>
+				<div class='card card-row'>
+					<div class='card-title yellow'>
+						2015
+					</div>
+					<div class='card-column flex1'>
+						<div class='card-content card-column'>
+							<div>The Pennsylvania State University</div>
+							<div class='alegreya-sans-italic'>
+								Bachelor of Science, Industrial Engineering
+							</div>
+						</div>
+						<div class='card-content card-column'>
+							<div>Savana</div>
+							<div class='alegreya-sans-italic'>
+								Web Developer Intern
+							</div>
+							<div class='alegreya-sans-content'>
+								Worked with the report development team to reimagine core productivity tools and interfaces.
+								Developed a full stack business intelligence application using Node.js, MySQL, and Foundation.
+								Produced well documented D3 data visualization prototypes over 10 weeks of scrum sprints.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='card card-row'>
+					<div class='card-title yellow'>
+						2014
+					</div>
+					<div class='card-content card-column flex1'>
+						<div>Disney</div>
+						<div class='alegreya-sans-italic'>
+							Industrial Engineering Intern
+						</div>
+						<div class='alegreya-sans-content'>
+							Wrote fast and flexible programs as an internal consultant, which phased out old applications.
+							Built Excel models to propose staffing and decrease guest lines at transportation checkpoints.
+							Designed flow rate and wait time iPhone apps to optimize travel for thousands of park visitors.
+						</div>
+					</div>
+				</div>
+				<div class='card card-row'>
+					<div class='card-title yellow'>
+						2013
+					</div>
+					<div class='card-content card-column flex1'>
+						<div>Unilever</div>
+						<div class='alegreya-sans-italic'>
+							Supply Chain Intern
+						</div>
+						<div class='alegreya-sans-content'>
+							Assessed and managed common supply chain operations by pilot testing workflow automation.
+							Wrote a scalable Excel forecasting macro to reduce $500,000 of excess Suave inventory by 50%.
+							Modeled hair product order and shipping levels that automatically adapted to purchase rates.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='blue-bottom-ellipse ellipse'></div>
+		<div class='gray-top-ellipse ellipse'></div>
+	</div>
+
+	<div class='cards blue'>
+		<div id='reading-container'>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+		</div>
+		<div class='gray-bottom-ellipse ellipse'></div>
+		<div class='blue-top-ellipse ellipse'></div>
+	</div>
+
+	<div class='cards'>
+		<div id='photography-container'>
+			<div class='card-column flex1'>
+				<div class='card card-row'>
+					<div class='card-content flex1'>
+						photography
+					</div>
+				</div>
+			</div>
+
+			<div id='photo-grid' class='flex4'>
+				<!-- javascript insertion of thumbnails -->
+			</div>
+		</div>
+		<div class='green-bottom-ellipse ellipse'></div>
+		<div class='gray-top-ellipse ellipse'></div>
+	</div>
+
+	<div class='cards green'>
+		<div id='photography-container'>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+			<div class='card-content'>text</div>
+		</div>
+	</div>
+
 </body>
 </html>

@@ -1,0 +1,29 @@
+#reading-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 30vw;
+}
+
+#reading-container div {
+    position: relative;
+    z-index: 10;
+
+	width: 33.3%;
+	transition: .8s opacity;
+    opacity: 0.8;
+}
+
+#reading-container div:hover {
+	opacity: 1;
+}
+
+.blue {
+    background-color: #1b396d;
+}
+
+.blue-top-ellipse {
+    background-color: #1b396d;
+    border-radius: 0 0 0 100%;
+}

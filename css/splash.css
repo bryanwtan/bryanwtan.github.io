@@ -1,40 +1,55 @@
 /*large screens*/
 @media (min-width: 64.063em){
     #splash {
-        background: url('pics/prof_l.jpg') bottom center no-repeat;
+        background: url('../pics/prof_l.jpg') bottom center no-repeat;
     }
 
     #hello-text {
         font-size: 3.5em;
         padding: 2em;
     }
+
+    .ellipse {
+        width: 50vw;
+        height: 20vh;
+    }
 }
 /*medium screens*/
 @media (min-width: 40.063em) and (max-width: 64em) {
     #splash {
-        background: url('pics/prof_m.jpg') bottom center no-repeat;
+        background: url('../pics/prof_m.jpg') bottom center no-repeat;
     }
 
     #hello-text {
         font-size: 3em;
         padding: 2em;
     }
+
+    .ellipse {
+        width: 50vw;
+        height: 20vh;
+    }
 }
 /*small screens*/
 @media (max-width: 40em){
     #splash {
-        background: url('pics/prof_s.jpg') bottom center no-repeat;
+        background: url('../pics/prof_s.jpg') bottom center no-repeat;
     }
 
     #hello-text {
         font-size: 2em;
         padding: 2em;
     }
+
+    .ellipse {
+        width: 50vw;
+        height: 10vh;
+    }
 }
 
 #cover {
-    width: 100vw;
-    height: calc(100vh - 53px);
+    width: 100%;
+    height: 100vh;
     background-color: #492f5f;
     margin: 0;
 }
@@ -42,7 +57,7 @@
 #splash {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 53px);
+    height: 100vh;
     opacity: 0;
     transition: opacity 1.2s ease-in-out;
 }
@@ -60,4 +75,26 @@
 
 .position-text {
     font-size: 0.68em;
+}
+
+.ellipse {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    z-index: 1;
+}
+
+.purple-top-ellipse {
+    background-color: #492f5f;
+    border-radius: 0 0 0 100%;
+}
+
+.gray-bottom-ellipse {
+    background-color: #252525;
+    transition: opacity 1s ease-in-out;
+}
+
+#hidden-ellipse {
+    opacity: 0;
 }
