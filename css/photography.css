@@ -1,0 +1,23 @@
+#photography-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#photo-grid {
+    padding: 5px;
+    flex-flow: row wrap;
+    display: flex;
+}
+
+#photo-grid div {
+    flex: auto;
+
+    width: 200px;
+    margin: 5px;
+}
+
+#photo-grid div img {
+    width: 100%;
+}
