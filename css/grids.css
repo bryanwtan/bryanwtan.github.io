@@ -1,0 +1,42 @@
+#photography-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#reading-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blue {
+    background-color: #1b396d;
+}
+
+.blue-top-ellipse {
+    background-color: #1b396d;
+    border-radius: 0 0 0 100%;
+}
+
+#listening-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.green {
+    background-color: #2E473B;
+}
+
+.gray-top-ellipse {
+    background-color: #252525;
+    border-radius: 0 0 0 100%;
+}
+
+.green-bottom-ellipse {
+    background-color: #2E473B;
+}

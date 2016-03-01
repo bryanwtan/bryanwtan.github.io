@@ -15,14 +15,14 @@
 	<link rel='stylesheet' href='css/general.css'>
 	<link rel='stylesheet' href='css/splash.css'>
 	<link rel='stylesheet' href='css/cards.css'>
-	<link rel='stylesheet' href='css/photography.css'>
-	<link rel='stylesheet' href='css/reading.css'>
-	<link rel='stylesheet' href='css/listening.css'>
+	<link rel='stylesheet' href='css/grids.css'>
 
 	<link rel='shortcut icon' href='favicon.ico'>
 
 	<script async src='js/splash.js'></script>
+	<script async src='js/reading.js'></script>
 	<script async src='js/photography.js'></script>
+	<script async src='js/listening.js'></script>
 
 	<title>Bryan Tan, Software Engineer</title>
 </head>
@@ -129,10 +129,17 @@
 
 	<div class='cards blue'>
 		<div id='reading-container'>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
+			<div class='card-column flex1'>
+				<div class='card card-row'>
+					<div class='card-content flex1'>
+						reading
+					</div>
+				</div>
+			</div>
+
+			<div id='reading-grid' class='grid flex4'>
+				<!-- javascript insertion of thumbnails -->
+			</div>
 		</div>
 		<div class='gray-bottom-ellipse ellipse'></div>
 		<div class='blue-top-ellipse ellipse'></div>
@@ -148,7 +155,7 @@
 				</div>
 			</div>
 
-			<div id='photo-grid' class='flex4'>
+			<div id='photo-grid' class='grid flex4'>
 				<!-- javascript insertion of thumbnails -->
 			</div>
 		</div>
@@ -157,15 +164,18 @@
 	</div>
 
 	<div class='cards green'>
-		<div id='photography-container'>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
-			<div class='card-content'>text</div>
+		<div id='listening-container'>
+			<div class='card-column flex1'>
+				<div class='card card-row'>
+					<div class='card-content flex1'>
+						listening
+					</div>
+				</div>
+			</div>
+
+			<div id='listening-grid' class='grid flex4'>
+				<!-- javascript insertion of thumbnails -->
+			</div>
 		</div>
 	</div>
 

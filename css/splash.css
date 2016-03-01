@@ -10,8 +10,8 @@
     }
 
     .ellipse {
-        width: 50vw;
-        height: 20vh;
+        width: 40vw;
+        height: 15vh;
     }
 }
 /*medium screens*/
@@ -26,8 +26,8 @@
     }
 
     .ellipse {
-        width: 50vw;
-        height: 20vh;
+        width: 40vw;
+        height: 15vh;
     }
 }
 /*small screens*/
@@ -42,8 +42,8 @@
     }
 
     .ellipse {
-        width: 50vw;
-        height: 10vh;
+        width: 40vw;
+        height: 8vh;
     }
 }
 

@@ -18,8 +18,6 @@
             gridArr.push('.jpg"></div>');
         };
 
-        gridArr = gridArr.join('');
-
-        document.getElementById(target).innerHTML += gridArr;
+        document.getElementById(target).innerHTML += gridArr.join('');
     };
 }());
