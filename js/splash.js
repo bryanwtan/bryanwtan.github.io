@@ -8,7 +8,7 @@
         var hstyle = hello.style;
         hstyle.opacity = '1';
 
-        window.setTimeout(fadeInSplash, [500]);
+        window.setTimeout(fadeInSplash, [300]);
     }
 
     function fadeInSplash() {
@@ -16,7 +16,7 @@
         var pstyle = profile.style;
         pstyle.opacity = '1';
 
-        window.setTimeout(fadeInPageCurl, [500]);
+        window.setTimeout(fadeInPageCurl, [300]);
     }
 
     function fadeInPageCurl() {
@@ -24,6 +24,6 @@
         var bstyle = backgroundEllipse.style;
         bstyle.opacity = '1';
 
-        window.setTimeout(fadeInPageCurl, [500]);
+        window.setTimeout(fadeInPageCurl, [300]);
     }
 }());

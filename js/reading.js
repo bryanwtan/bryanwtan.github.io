@@ -15,7 +15,7 @@
 
         gridArr.forEach(function(img, index) {
             var tag = [];
-            tag.push('<div class="card-content grid-image-container"><img class="grid-image" src="');
+            tag.push('<div><img class="grid-image" src="');
             tag.push(img);
             tag.push('"></div>');
             gridArr[index] = tag.join('');

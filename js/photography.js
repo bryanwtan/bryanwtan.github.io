@@ -13,7 +13,7 @@
                 i = '0' + i;
             }
 
-            gridArr.push('<div class="card-content grid-image-container"><img class="grid-image" src="css/photography/');
+            gridArr.push('<div><img class="grid-image" src="css/photography/');
             gridArr.push(i);
             gridArr.push('.jpg"></div>');
         };
