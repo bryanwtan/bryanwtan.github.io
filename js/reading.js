@@ -15,7 +15,7 @@
 
         gridArr.forEach(function(img, index) {
             var tag = [];
-            tag.push('<div><img class="grid-image" src="');
+            tag.push('<div class="picture-div"><img class="grid-image" src="');
             tag.push(img);
             tag.push('"></div>');
             gridArr[index] = tag.join('');
@@ -23,4 +23,19 @@
 
         document.getElementById(target).innerHTML += gridArr.join('');
     };
+
+    function resizePictureDivHeights() {
+        requestAnimationFrame(resizePictureDivHeights);
+
+        var pictureDivs = document.getElementsByClassName('picture-div');
+        var length = pictureDivs.length;
+        for(var i = 0; i < length; i++) {
+            var width = pictureDivs[i].clientWidth;;
+            var height = width*1.45;
+            pictureDivs[i].style.height = height + 'px';
+        }
+    }
+
+    resizePictureDivHeights();
+    window.onresize = resizePictureDivHeights;
 }());
