@@ -14,7 +14,7 @@
         ];
 
         gridArr.forEach(function(img, index) {
-            img = img.split(' ~ ')
+            img = img.split(' ~ ');
             var tag = [];
             tag.push('<div><a href="');
             tag.push(img[0]);
