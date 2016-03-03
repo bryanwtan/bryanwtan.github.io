@@ -13,6 +13,17 @@
         width: 40vw;
         height: 15vh;
     }
+
+    .cards {
+        width: 100% !important;
+    }
+    .cards div:first-child {
+        max-width: 64.063em !important;
+    }
+    #experience-container, #reading-container,
+    #photography-container, #listening-container {
+        margin: 0 auto;
+    }
 }
 /*medium screens*/
 @media (min-width: 40.063em) and (max-width: 64em) {
