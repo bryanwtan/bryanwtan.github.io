@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     cursor: default;
     -webkit-user-select: none;
-    -khtml-user-select: none;
+    -ms-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
@@ -19,12 +19,20 @@ a {
 
 .grid {
     padding: 5px;
-    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .grid div {
-    flex: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
     width: 220px;
     margin: 5px;
 
