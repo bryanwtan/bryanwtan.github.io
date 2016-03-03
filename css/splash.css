@@ -17,12 +17,10 @@
     .cards {
         width: 100% !important;
     }
-    .cards div:first-child {
-        max-width: 64.063em !important;
-    }
     #experience-container, #reading-container,
     #photography-container, #listening-container {
         margin: 0 auto;
+        max-width: 64.063em !important;
     }
 }
 /*medium screens*/
